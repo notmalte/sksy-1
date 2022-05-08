@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="style.css" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link href="style.css" rel="stylesheet" />
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <style>
-        div{
-            text-align: center;
-        }
+      div {
+        text-align: center;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <div>
+      <input type="text" id="id" placeholder="Titel eingeben" />
+      <input type="text" id="datum" placeholder="datum eingeben" />
+      <input type="text" id="erledigt" placeholder="erledigt" />
+      <input type="button" value="add" id="btn_add" />
+    </div>
 
-<div>
-    <input type="text" id="id" placeholder="Titel eingeben">
-    <input type="text" id="datum"  placeholder="datum eingeben">
-    <input type="text" id="erledigt"  placeholder="erledigt">
-    <input type="button" value="add" id="btn_add">
-
-</div>
-
-<table class="table table-bordered" >
-    <caption>Tabelle</caption>
-    <tr>
+    <table class="table table-bordered">
+      <caption>
+        Tabelle
+      </caption>
+      <tr>
         <th align="center">Titel</th>
         <th align="center">datum</th>
         <th align="center">erledigt</th>
-    </tr>
+      </tr>
 
-    <tr>
+      <tr>
         <td>1</td>
         <td>22.02.2022</td>
         <td>3%</td>
-    </tr>
+      </tr>
 
-    <tr>
+      <tr>
         <td>2</td>
         <td>23.02.2012</td>
         <td>5%</td>
-    </tr>
+      </tr>
 
-    <tr>
+      <tr>
         <td>3</td>
         <td>24.02.2024</td>
         <td>10%</td>
-    </tr>
-</table>
+      </tr>
+    </table>
 
-<script>
-    document.getElementById("btn_add").onclick=function () {
+    <script>
+      document.getElementById("btn_add").onclick = function () {
         var id = document.getElementById("id").value;
         var datum = document.getElementById("datum").value;
         var erledigt = document.getElementById("erledigt").value;
@@ -59,11 +62,9 @@
         var idNode = document.createTextNode(id);
         td_id.appendChild(idNode);
 
-
         var td_datum = document.createElement("td");
         var datumNode = document.createTextNode(datum);
         td_datum.appendChild(datumNode);
-
 
         var td_erledigt = document.createElement("td");
         var erledigtNode = document.createTextNode(erledigt);
@@ -74,16 +75,14 @@
         tr.appendChild(td_datum);
         tr.appendChild(td_erledigt);
 
-
         var table = document.getElementsByTagName("table")[0];
         table.appendChild(tr);
-    }
+      };
+    </script>
 
-</script>
-
-<div class="wrapper">
-    <a href="C:\Users\sunyi\Desktop\ha\uebersicht.html">Uebersicht</a> |
-    <a href="C:\Users\sunyi\Desktop\ha\impressum.html">impressum</a>
-</div>
-</body>
+    <div class="wrapper">
+      <a href="C:\Users\sunyi\Desktop\ha\uebersicht.html">Uebersicht</a> |
+      <a href="C:\Users\sunyi\Desktop\ha\impressum.html">impressum</a>
+    </div>
+  </body>
 </html>
