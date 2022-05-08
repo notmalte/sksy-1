@@ -13,57 +13,68 @@
     <title>TODO List</title>
   </head>
   <body>
-    <h1>Übersicht</h1>
-    <table class="table table-bordered">
-      <tbody>
-        <tr>
-          <th>Titel</th>
-          <th>Datum</th>
-          <th>erledigt</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>22.02.2022</td>
-          <td>3%</td>
-          <td>
-            <a class="btn btn-primary pull-right" style="margin-left: 10px"
-              >delete</a
-            >
+    <div class="container py-3 py-md-5 px-3">
+      <div class="d-flex align-items-center pb-3">
+        <h1>Overview</h1>
+        <a class="ms-auto btn btn-primary" href="./add.html">add</a>
+      </div>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Date</th>
+              <th>%</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+              <td>22.02.2022</td>
+              <td>3%</td>
+              <td>
+                <div class="d-flex flex-column flex-md-row">
+                  <a class="btn btn-danger my-1">delete</a>
+                  <a class="btn btn-primary my-1 ms-md-2" href="./edit.html"
+                    >edit</a
+                  >
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Nihil, numquam illum tempore magnam nisi dolorum quis dolor
+                totam saepe ex, cum ut, assumenda mollitia consectetur.
+              </td>
+              <td>23.02.2012</td>
+              <td>5%</td>
+              <td>
+                <div class="d-flex flex-column flex-md-row">
+                  <a class="btn btn-danger my-1">delete</a>
+                  <a class="btn btn-primary my-1 ms-md-2" href="./edit.html"
+                    >edit</a
+                  >
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Optio alias corporis quisquam quod.</td>
+              <td>24.04.2024</td>
+              <td>10%</td>
+              <td>
+                <div class="d-flex flex-column flex-md-row">
+                  <a class="btn btn-danger my-1">delete</a>
+                  <a class="btn btn-primary my-1 ms-md-2" href="./edit.html"
+                    >edit</a
+                  >
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-            <a class="btn btn-primary pull-right" href="./edit.html">edit</a>
-          </td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>23.02.2012</td>
-          <td>5%</td>
-          <td>
-            <a class="btn btn-primary pull-right" style="margin-left: 10px"
-              >delete</a
-            >
-
-            <a class="btn btn-primary pull-right" href="./edit.html">edit</a>
-          </td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>24.04.2024</td>
-          <td>10%</td>
-          <td>
-            <a class="btn btn-primary pull-right" style="margin-left: 10px"
-              >delete</a
-            >
-
-            <a class="btn btn-primary pull-right" href="./edit.html">edit</a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-
-    <a class="btn btn-primary" href="./add.html">add</a>
-
-    <div class="wrapper">
-      <a href="./imprint.html">impressum</a>
+      <a href="./imprint.html">Imprint</a>
     </div>
   </body>
 </html>
