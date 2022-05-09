@@ -13,6 +13,48 @@
     <title>Edit TODO</title>
   </head>
   <body>
-    <!-- TODO: This should be the page to edit an existing todo -->
+    <div class="container py-3 py-md-5 px-3">
+      <h1>Edit TODO</h1>
+
+      <form>
+        <div class="row">
+          <div class="col-12 col-lg-6 mb-3">
+            <label for="todoTitle" class="form-label">Title</label>
+            <input
+              type="text"
+              class="form-control"
+              id="todoTitle"
+              value="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            />
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-3">
+            <label for="todoDate" class="form-label">Date</label>
+            <input
+              type="date"
+              class="form-control"
+              id="todoDate"
+              value="2022-02-22"
+            />
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-3">
+            <label for="todoProgress" class="form-label">Progress</label>
+            <input
+              type="text"
+              class="form-control"
+              id="todoProgress"
+              placeholder="e.g. 10%"
+              value="3%"
+            />
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Edit</button>
+      </form>
+
+      <p class="mt-4 text-secondary">
+        <a href="./index.html">Overview</a> |
+        <a href="./imprint.html">Imprint</a>
+      </p>
+    </div>
   </body>
 </html>
